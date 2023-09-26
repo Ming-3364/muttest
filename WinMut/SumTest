@@ -1,0 +1,12 @@
+#!/bin/bash
+
+result=$(./muttest)
+echo "Expect Sum: 3     Actual Sum: $result"
+if [ "$result" -eq 3 ]; then
+    echo "Test Passed"
+else
+    echo "Test Failed"
+fi
+
+rm muttest
+
